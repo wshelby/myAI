@@ -1,0 +1,4 @@
+# Stop deployments triggered by pull requests
+if [[ $VERCEL_GIT_PULL_REQUEST == "true" ]]; then
+  exit 1;
+fi
